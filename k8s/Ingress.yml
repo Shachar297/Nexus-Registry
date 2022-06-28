@@ -4,11 +4,11 @@ metadata:
   name: ingress-nexus-host
 spec:
   rules:
-    - host: "artifactory.esl.corp.elbit.co.il"
+    - host: "artifactory"
       http:
         paths:
           - pathType: Prefix
-            path: "/global_operations--docker"
+            path: "/"
             backend:
               service:
                 name: nexus
