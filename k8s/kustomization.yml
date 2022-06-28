@@ -1,0 +1,12 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: nexus
+
+resources:
+  - Namespace.yml
+  - Deployment.yml
+  - PersistentVolume.yml
+  # - PersistentVolumeClaim.yml
+  - Service.yml
+  - Ingress.yml
